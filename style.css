@@ -1,0 +1,278 @@
+*{
+  font-size: 16px;
+}
+
+body {
+  background-color: #E5EBF0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h3{
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  color: #000;
+  width: 85%;
+}
+
+/* ------FORM STYLE----- */
+#catering-form{
+  display: flex;
+  padding: 0 2rem;  
+}
+
+.catering-container {
+  width: 600px;
+  height: 800px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 15%);
+  margin-left: 1rem;
+}
+
+.catering-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem auto;
+}
+
+.catering-container .form {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: .5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.catering-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  
+}
+
+.catering-text img {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.catering-text p {
+  font-size: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.catering-text h3 {
+  width: 85%;
+}
+
+.catering-text .ul-container {
+  display: flex;
+  height: auto;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  padding: 1rem 0;
+}
+
+#catering-form .catering-box  .catering-text .ul-container div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: .5rem 0;
+}
+
+#catering-form .catering-box  .catering-text .ul-container div h2 {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-left: .5rem;
+}
+
+#catering-form .catering-box  .catering-text .ul-container div img {
+  height: 50px;
+  width: 50px;
+  margin: 0;
+}
+
+.contact-switch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* FORM INPUTS/BTNS/ETC */
+.catering-container .form label {
+  width: 87%;
+  text-align: left;
+  font-weight: 700;
+}
+
+form input {
+  width: 85%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 0;
+  border-bottom: 1px solid #999;
+  border-radius: 0px;
+  outline: none;
+  background: transparent;
+}
+
+form select {
+  border-radius: 0px;
+}
+
+form .catering-text-box {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+form p {
+  text-align: center;
+}
+
+.name {
+  display: flex;
+  width: 87%;
+  justify-content: space-between;
+}
+
+.name input {
+  width: 42%;
+}
+
+#message {
+  width: 85%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+#drop-down {
+  width: 87%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+
+::placeholder {
+  color: #777;
+}
+
+.btn-box{
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+form button {
+  width: 110px;
+  height: 35px;
+  margin: 5px 10px;
+  background: transparent;
+  border-radius: 30px;
+  border: 2px solid #000;
+  outline: none;
+  color: var(--dk-bg);
+  font-size: .85rem;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+
+#submit {
+  width: 110px;
+  height: 35px;
+  margin: 5px 10px;
+  background: transparent;
+  border-radius: 30px;
+  border: 2px solid #000;
+  outline: none;
+  color: var(--dk-bg);
+  font-size: .85rem;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+}
+
+#submit:hover {
+  background: #3A3A39;
+  color: #FFF;
+  transition: .1s ease-in;
+}
+
+form button:hover {
+  background: #3A3A39;
+  color: #FFF;
+  transition: .1s ease-in;
+}
+
+/* ALIGN AWAY FOR OVERFLOW */
+#Form2{
+  left: 850px;
+}
+
+#Form3 {
+  left: 850px;
+}
+
+/* PROGRESS BAR */
+.step-row{
+  width: 100%;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -1px 5px -1px #000;
+  position: relative;
+}
+
+.step-col{
+  width: 33%;
+  text-align: center;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 900;
+  position: relative;
+}
+
+#progress {
+  position: absolute;
+  height: 100%;
+  width: 33%;
+  background: linear-gradient(to right, #236894, #23689455);
+  transition: .5s;
+}
+
+#progress:after {
+  content: '';
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  border-left: 20px solid #23689455 ;
+}
