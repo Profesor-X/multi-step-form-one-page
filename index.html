@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Step Form on One Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="main-top" class="container"> 
+  <section id="catering-form">
+    <div class="catering-box">
+      <form class="catering-container">
+        <div id="Form1" class="form">
+          <h3>FORM 1: Contact Information</h3>
+          <div class="name">
+            <input type="text" placeholder="First Name" name="first-name">
+            <input type="text" placeholder="Last Name" name="last-name">
+          </div>
+            <input type="email" placeholder="E-mail Address" name="email">              
+            <input type="tel" placeholder="Phone Number" name="phone" >
+            <input type="text" placeholder="Company Name (Optional)" name="company">
+          <div class="btn-box">
+            <button type="button" id="Next1">Next</button>
+          </div>
+        </div>
+    
+        <div id="Form2" class="form">
+              <div class="catering-text-box">
+                <h3>FORM 2: Other Details</h3>
+              </div>
+              <select id="drop-down" name="dropdown" required>
+                <option value="" disabled selected hidden>*Please select the best programming language:</option>
+                <option value="">JavaScript</option>
+                <option value="">Python</option>
+                <option value="">Cobol</option>
+                <option value="">Java</option>
+                <option value="">C</option>
+              </select>
+              <input type="text" placeholder="Event Address (Optional)" name="address">
+              <input type="text" placeholder="City (Optional)" name="city">
+              <input type="text" placeholder="Zip Code (Optional)" name="zip">
+              <label for="time">Time</label>
+              <input type="time" placeholder="Enter Time" name="time" min="07:00" max="23:00" name="time">
+              <label for="date">Date</label>
+              <input type="date" placeholder="Event Date" min="2021-01-01" max="2022-12-31" name="date">
+              <div class="btn-box">
+                <button type="button" id="Back1">Back</button>
+                <button type="button" id="Next2">Next</button>
+              </div>
+        </div>
+            
+        <div id="Form3" class="form" >
+              <h3>FORM 3: Additional Information</h3>
+              <input type="number" placeholder="Number of Something" name="">
+                
+              <select id="drop-down" name="contact" required >
+                <option value="" disabled selected hidden>*Preferred Contact Method:</option>
+                <option value="phone">Phone</option>
+                <option value="email">E-mail</option>
+                <option value="text">Text Message</option>
+              </select>
+              <textarea name="message" id="message" cols="30" rows="10" 
+                placeholder="Add any additional information or special requirements about here!"
+                 name="message"></textarea>
+              <div class="btn-box">
+                <button type="button" id="Back2">Back</button>
+                <input type="submit" name="submit" value="Submit" id="submit">
+              </div>         
+        </div>
+    
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><Small>Step 1</Small></div>
+            <div class="step-col"><Small>Step 2</Small></div>
+            <div class="step-col"><Small>Step 3</Small></div>
+        </div>
+
+      </form>
+    </div>
+  </section> 
+  </main>
+  <script src="form-switch.js"></script>
+</body>
+</html>
